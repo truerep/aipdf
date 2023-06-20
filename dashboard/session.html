@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Paper | AiPdf</title>
+        <link id="theme-style" rel="stylesheet" href="./themes/dark-theme.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+<body>
+    <div class="main-wrapper">
+        <div class="sidebar">
+            <div class="close-sidebar">
+                <button onclick="closeSidebar()"></button>
+            </div>
+            <div class="sidebar-header">
+                <a href="/dashboard/new.html" class="btn btn-transparent new-file-action">
+                    New File
+                </a>
+            </div>
+            <div class="sidebar-body">
+                <div class="session-lists">
+                    <h2>Sessions</h2>
+                    <a href="./session.html" class="session-pdf active">
+                        Sample Paper
+                    </a>
+                    <a href="./session.html" class="session-pdf">
+                        Testing Session
+                    </a>
+                    <h2>Older Sessions</h2>
+                    <a href="./session.html" class="session-pdf">
+                        Testing Session
+                    </a>
+                    <a href="./session.html" class="session-pdf">
+                        Sample Paper
+                    </a>
+                    <a href="./session.html" class="session-pdf">
+                        Testing Session
+                    </a>
+                    <a href="./session.html" class="session-pdf">
+                        Sample Paper
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <a href="#" class="logout">
+                    Sign Out
+                </a>
+            </div>
+        </div>
+        <div class="chat-wrapper">
+            <div class="file-info-wrapper">
+                <div class="hamburger-icon">
+                    <button onclick="toggleSidebar()"></button>
+                </div>
+                <div class="file-content">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <div class="title">Sample Paper</div>
+                        <div class="file-name">sample-paper.pdf</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box">
+                <div class="chat-item">
+                    <div class="title">
+                        What is in the file
+                    </div>
+                    <div class="description">
+                        The file contains a demonstration PDF with lots of text. The same content is continued on page 2. There is no specific structure or formatting used within the file.
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="title">
+                        Dummy Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis?
+                    </div>
+                    <div class="description">
+                        Solution Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse, perferendis iusto accusamus quis nostrum quas quia hic pariatur eum! Reprehenderit porro, vero autem culpa omnis voluptatibus quidem earum dicta cupiditate, officiis necessitatibus doloremque at, quaerat ipsum eos magni tenetur?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message-input-wrapper">
+                <div class="chat-message-input-box">
+                    <input type="text" placeholder="Ask something about file...">
+                    <button class="send-msg-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
