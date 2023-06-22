@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sample Paper | AiPdf</title>
-        <link id="theme-style" rel="stylesheet" href="./themes/dark-theme.css">
+        <link id="theme-style" rel="stylesheet" href="./themes/azure-night.css">
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js"></script>
     </head>
@@ -44,6 +44,21 @@
                 </div>
             </div>
             <div class="sidebar-footer">
+                <div class="theme-options-wrapper">
+                    <div class="theme-options">
+                        <ul>
+                            <li>
+                                <button class="btn btn-transparent" onclick="changeTheme('midnight-blue.css')">Midnight blue</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-transparent" onclick="changeTheme('azure-night.css')">Azure Night</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleThemeOptions()" class="btn btn-transparent">
+                        Change Theme
+                    </button>
+                </div>
                 <a href="#" class="logout">
                     Sign Out
                 </a>

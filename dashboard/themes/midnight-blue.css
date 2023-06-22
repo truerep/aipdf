@@ -1,0 +1,20 @@
+:root {
+    --primary: #0f1624;
+    --secondary: #18233e;
+    --tertiary: #23344e;
+    --text-primary: #ffffff;
+    --text-secondary: #b3c2db;
+    --text-light: #8794a6;
+    --action-color: #00aaff;
+
+    
+    --upload-icon: url('https://ik.imagekit.io/sahildhingra/file-upload-icon.png');
+    --logout-icon: url('https://ik.imagekit.io/sahildhingra/logout-icon.png');
+    --pdf-icon: url('https://ik.imagekit.io/sahildhingra/pdf-icon.png');
+    --plus-icon: url('https://ik.imagekit.io/sahildhingra/plus-icon-dark.png');
+    --send-icon: url('https://ik.imagekit.io/sahildhingra/send-icon.png');
+    --ai-bot-icon: url('https://ik.imagekit.io/sahildhingra/ai-bot-icon.png');
+    --user-chat-icon: url('https://ik.imagekit.io/sahildhingra/user-icon.png');
+    --hamburger-icon: url('https://ik.imagekit.io/sahildhingra/hamburger.png');
+    --close-icon: url('https://ik.imagekit.io/sahildhingra/close-gray.png');
+}
