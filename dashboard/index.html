@@ -22,7 +22,7 @@
             <div class="sidebar-body">
                 <div class="session-lists">
                     <h2>Sessions</h2>
-                    <a href="./session.html" class="session-pdf active">
+                    <a href="./session.html" class="session-pdf">
                         Sample Paper
                     </a>
                     <a href="./session.html" class="session-pdf">
@@ -69,37 +69,37 @@
                 <div class="hamburger-icon">
                     <button onclick="toggleSidebar()"></button>
                 </div>
-                <div class="file-content">
-                    <div class="icon"></div>
-                    <div class="content">
-                        <div class="title">Sample Paper</div>
-                        <div class="file-name">sample-paper.pdf</div>
-                    </div>
+                <div class="file-content title-dashboard">
+                    <div class="title">Dashboard</div>
                 </div>
             </div>
             <div class="chat-box">
-                <div class="chat-item">
-                    <div class="title">
-                        What is in the file
-                    </div>
-                    <div class="description">
-                        The file contains a demonstration PDF with lots of text. The same content is continued on page 2. There is no specific structure or formatting used within the file.
-                    </div>
-                </div>
-                <div class="chat-item">
-                    <div class="title">
-                        Dummy Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis?
-                    </div>
-                    <div class="description">
-                        Solution Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse, perferendis iusto accusamus quis nostrum quas quia hic pariatur eum! Reprehenderit porro, vero autem culpa omnis voluptatibus quidem earum dicta cupiditate, officiis necessitatibus doloremque at, quaerat ipsum eos magni tenetur?
-                    </div>
-                </div>
-            </div>
-            <div class="chat-message-input-wrapper">
-                <div class="chat-message-input-box">
-                    <input type="text" placeholder="Ask something about file...">
-                    <button class="send-msg-btn"></button>
-                    <button class="processing-message-loader" id="loader"</button>
+                <div class="table table-dashboard">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Filename</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">fileName.pdf</a>
+                                </td>
+                                <td>Filename</td>
+                                <td>Status</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">fileName.pdf</a>
+                                </td>
+                                <td>Filename</td>
+                                <td>Status</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

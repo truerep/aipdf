@@ -267,6 +267,60 @@ a {
     align-items: center;
 }
 
+.table tr th, .table tr td {
+    padding: 6px 9px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.table a {
+    color: var(--action-color);
+}
+
+.table a:hover {
+    text-decoration: underline  ;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr th {
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--text-primary);
+    padding-bottom: 15px;
+}
+
+.table tr td {
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--tertiary);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.table tbody tr:last-child td {
+    border: 0;
+    padding-bottom: 6px;
+}
+
+.table-dashboard {
+    background-color: var(--secondary);
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.title-dashboard {
+    flex: 1;
+}
+
+.title-dashboard .title {
+    text-align: center;
+    width: 100%;
+}
+
 .file-content {    
     display: flex;
     align-items: center;
@@ -398,6 +452,19 @@ a {
     flex-shrink: 0;
 }
 
+.processing-message-loader {
+    background-image: var(--processing-icon);
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    background-size: contain;
+    margin-right: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
 .theme-options-wrapper {
     position: relative;
 }
@@ -487,6 +554,10 @@ a {
 }
 
 @media (max-width: 576px) { 
+    .table tr th, .table tr td {
+        font-size: 15px;
+    }
+    
     .chat-box {
         padding: 75px 0 40px;
     } 
