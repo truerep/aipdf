@@ -56,6 +56,11 @@ a {
     color: var(--primary);
 }
 
+.btn-secondary {
+    border-color: var(--text-secondary); 
+    color: var(--text-secondary);
+}
+
 .main-wrapper {
     display: flex;
     height: 100vh; 
@@ -143,6 +148,17 @@ a {
 
 .sidebar-header a {
     color: var(--action-color)!important;
+}
+
+.sidebar-header a.btn-dashboard {
+    color: var(--text-secondary)!important;
+    margin-top: 15px;
+}
+
+.sidebar-header a.btn-dashboard::before {
+    background-image: var(--dashboard-icon);
+    height: 18px;
+    width: 18px;
 }
 
 .session-lists h2 {
