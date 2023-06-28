@@ -31,3 +31,74 @@ function changeTheme(themeName) {
     themeStyle.href = "./themes/"+themeName;
     document.querySelector('.theme-options').classList.remove('toggled');
 }
+
+// Switching Tabs
+document.addEventListener('DOMContentLoaded', function() {
+    var tabs = document.querySelectorAll('.tab-item');
+    var tabContents = document.querySelectorAll('.tab-content');
+
+    function openTab(tabId) {
+        tabContents.forEach(function(content) {
+        content.style.display = 'none';
+        });
+
+        tabs.forEach(function(tab) {
+        tab.classList.remove('active');
+        });
+
+        var selectedTabContent = document.getElementById(tabId);
+        selectedTabContent.style.display = 'block';
+
+        var selectedTab = document.querySelector('.tab-item[data-tab="' + tabId + '"]');
+        selectedTab.classList.add('active');
+    }
+
+    document.querySelector('.option-tabs-wrapper').addEventListener('click', function(event) {
+        var tabId = event.target.dataset.tab;
+        if (tabId) {
+            openTab(tabId);
+        }
+    });
+
+    openTab(tabs[0].dataset.tab);
+});
+
+// Modal Popup 
+document.addEventListener('DOMContentLoaded', function() {
+    var openModalBtns = document.querySelectorAll('.openModalBtn');
+    var closeButtons = document.querySelectorAll('.close');
+    var modals = document.querySelectorAll('.modal');
+  
+    function openModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'block';
+    }
+  
+    function closeModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'none';
+    }
+  
+    openModalBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(event) {
+        var modalId = event.target.dataset.modal;
+        openModal(modalId);
+      });
+    });
+  
+    closeButtons.forEach(function(btn) {
+      btn.addEventListener('click', function(event) {
+        var modalId = event.target.dataset.modal;
+        closeModal(modalId);
+      });
+    });
+  
+    modals.forEach(function(modal) {
+      modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          var modalId = event.target.id;
+          closeModal(modalId);
+        }
+      });
+    });
+});

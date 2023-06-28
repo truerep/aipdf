@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload PDF | AiPdf</title>
+    <title>Start New</title>
     <link id="theme-style" rel="stylesheet" href="./themes/azure-night.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
@@ -16,7 +16,7 @@
             </div>
             <div class="sidebar-header">
                 <a href="/dashboard/new.html" class="btn btn-transparent new-file-action">
-                    New File
+                    New Chat
                 </a>
                 <a href="./" class="btn btn-secondary btn-dashboard">
                     Dashboard
@@ -62,6 +62,9 @@
                         Change Theme
                     </button>
                 </div>
+                <a href="#" class="feedback openModalBtn" data-modal="feedbackModal">
+                    Feedback
+                </a>
                 <a href="#" class="logout">
                     Sign Out
                 </a>
@@ -71,20 +74,62 @@
             <div class="hamburger-icon">
                 <button onclick="toggleSidebar()"></button>
             </div>
-            <div class="form-section">
-                <h1>Upload a PDF file</h1>
-                <input type="text" placeholder="Enter File Name">
-                <div class="file-upload-wrapper">
-                    <label>
-                        <div class="upload-icon"></div>
-                        <span id="file-name">Browse Pdf</span>
-                        <input type="file" id="file-input">
-                    </label>
+            <div class="parsing-options-wrapper">
+                <div class="option-tabs-wrapper">
+                    <button class="tab-item" data-tab="pdfTab">PDF</button>
+                    <button class="tab-item" data-tab="urlTab">URL</button>
                 </div>
-                <a href="" class="btn btn-transparent">
-                    Analyze
+                <div id="pdfTab" class="form-section tab-content">
+                    <h1>Upload a PDF file</h1>
+                    <input type="text" placeholder="Enter File Name">
+                    <div class="file-upload-wrapper">
+                        <label>
+                            <div class="upload-icon"></div>
+                            <span id="file-name">Browse Pdf</span>
+                            <input type="file" id="file-input">
+                        </label>
+                    </div>
+                    <a href="#" class="btn btn-transparent">
+                        Analyze
+                    </a>
+                </div>
+                <div id="urlTab" class="form-section tab-content">
+                    <h1>Enter URL to Analyze</h1>
+                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Enter URL Path">
+                    <a href="#" class="btn btn-transparent">
+                        Analyze
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal="feedbackModal">&times;</span>
+          <div class="feedback-form">
+            <h3>Share Feedback</h3>
+            <div class="rating-stars">
+                <input type="radio" name="star" id="rate-5" value="5">
+                <label for="rate-5" class="star-icon fa-solid fa-star"></label>
+                <input type="radio" name="star" id="rate-4" value="4">
+                <label for="rate-4" class="star-icon fa-solid fa-star"></label>
+                <input type="radio" name="star" id="rate-3" value="3">
+                <label for="rate-3" class="star-icon fa-solid fa-star"></label>
+                <input type="radio" name="star" id="rate-2" value="2">
+                <label for="rate-2" class="star-icon fa-solid fa-star"></label>
+                <input type="radio" name="star" id="rate-1" value="1">
+                <label for="rate-1" class="star-icon fa-solid fa-star"></label>
+            </div>
+            <textarea placeholder="Share your valuable thoughts..."></textarea>
+            <div class="btn-wrapper">
+                <a href="#" class="btn btn-transparent">
+                    Fire
                 </a>
             </div>
+          </div>
         </div>
     </div>
 </body>
